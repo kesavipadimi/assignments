@@ -1,0 +1,61 @@
+         ASSIGNMENT-1
+   Q1.What will the code below output to the console and why ?
+      console.log(1 + "2" + "2");---- output is: 122 and 1 is printed as it is and 2 is a                                                  string so it printed exactly.
+
+      console.log(1 + +"2" + "2");--- output is:32  and 1+2 is 3 and 2 printed normally.. 
+ 
+      console.log(1 + -"1" + "2");---- output is:02 and 1-1 is 0 and 2 printed normally..
+
+      console.log(+"1" + "1" + "2");----output is: 112 as all are strings..
+
+      console.log( "A" - "B" + "2");----output is: nan2 those are not a numbers
+
+      console.log( "A" - "B" + 2);-----output is:nan these are not a numbers..
+
+    Question 2
+      You are given a variable “marks”. Your task is to print:
+        - AA if the mark is greater than 90
+        - AB if the mark is greater than 80 and less than or equal to 90
+        - BB if the mark is greater than 70and less than or equal to 80
+        - BC if the mark is greater than 60 and less than or equal to 70
+        - CC if the mark is greater than 50 and less than or equal to 60
+        - CD if the mark is greater than 40 and less than or equal to 50
+        - DD if the mark is greater than 30 and less than
+        - FF if the mark is less than or equal to 30
+  solution:
+  <script>
+   var marks=10;
+  if(marks>90)
+  {
+      console.log("AA")
+  }
+  else if(marks>80 && marks<=90)
+  {
+      console.log("AB")
+  }
+  else if(marks>70 && marks<=80)
+  {
+      console.log("BB")
+  }
+  else if(marks>60 && marks<=70)
+  {
+      console.log("BC")
+  }
+  else if(marks>50 && marks<=60)
+  {
+      console.log("CC")
+  }
+  else if(marks>40 && marks<=50)
+  {
+      console.log("CD")
+  }
+  else if(marks>30 && marks<=40)
+  {
+      console.log("DD")
+  }
+     else
+    {
+      console.log("FF")
+     }
+
+       </script>
