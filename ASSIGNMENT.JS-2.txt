@@ -1,0 +1,23 @@
+       q1.  What is the value of clothes[0] and why?
+               const clothes = ['jacket', 't-shirt'];
+               clothes.length = 0;
+               console.log(clothes[0]);
+			  
+			  
+		output:undefined 
+   the length property set to zero here in that case if length is zero all the elements in the array
+   are deleted  so after deleting we can find that our array is empty hence we cant find any value over it so 
+   it is undefined!
+     
+	 
+	 
+	 q2.Write a Javascript program to find the sum of all elements of a given array?
+	 
+	 
+	 
+	        var arr =[2,4,6,8,10];
+            var sum=0;
+            for(var i=0;i<arr.length;i++){
+            sum=sum+arr[i];
+             }
+         console.log("sum is :" +sum)
