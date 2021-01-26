@@ -1,0 +1,39 @@
+  Q1.Write a JavaScript program to display the reading status (i.e. display book name, author name,
+     and reading status) of the following books. 
+	 
+	 
+	 var books =[
+        {
+            author:'BILL GATES',
+            title:'THE ROAD AHEAD',
+            readingstatus:'Already read'
+        },
+        {
+            author:'STEVE JOBS',
+            title:'walter isaacson',
+            readingstatus:'already read'
+        },
+        {
+            author:'Suzanne Collins',
+            title:'Mockingjay: The Final Book of The Hunger Games',
+            readingstatus:'you still need to read'
+        }
+
+        
+    ]
+    console.log(books[0].readingstatus ,books[0].author +" BY "+ books[0].title)
+    console.log(books[1].readingstatus ,books[1].author +" BY  " + books[1].title)
+    console.log(books[2].readingstatus ,books[2].title +" BY  " + books[2].author)
+	
+	
+   Q2.Write a javascript program that generates an alert "Not legal age to drive" if the driver age is
+      below 18 years old, if driver age is greater than or equal to 18, it generates an alert "Drive safe".
+	  
+	  
+	  var age=10;
+    if(age>=18){
+        alert("DRIVE SAFE")
+    }
+    else{
+        alert("NOT LEGAL AGE TO DRIVE")
+    }
