@@ -1,0 +1,41 @@
+1. By how many ways we can access elements in the DOM and write about them in brief?
+    We can access elements in the Dom by using three methods:
+	1. using document.getElementById();
+	  by using ID we can access only unique element we need and we can perfrom any operation on that
+	2. using document.GetElementsByTagName();
+	by using TagName  we can access multiple elements in our document.
+	3. using  document.getElementsByClassName();
+	by using ClassName  same as TagName we can access multiple elements in our html document
+	
+	also using queryselector(); and queryselectorall(); we can access the elements.
+	
+2. Write a javascript program that will take 2 numbers from the HTML page and display them on the
+    HTML page after the addition of those 2 numbers.
+
+   !DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <label>ENTER FIRST NUM:</label>
+    <input type="text" id="first"><br>
+    <label>ENTER SECOND NUM:</label>
+    <input type="text" id="second"><br>
+    <button onclick="addition()">ADD</button>
+    <input type="text" id="result">
+    <script>
+	function addition()
+    {
+        var x = document.getElementById("first").value;
+        var y = document.getElementById("second").value;
+        var z = parseInt(x)+parseInt(y);
+         console.log(z);
+        document.getElementById("result").value=z;
+    }
+
+    </script>
+</body>
+</html>
+	
